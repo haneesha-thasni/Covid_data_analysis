@@ -36,6 +36,7 @@
 * No duplicate values
 
 ## Questions :
+* filtering and sort
 1) filter the dataset to include only rows where the countriesandterritories column is either united_states_of_america or india?
 2) filter the dataframe to include only the rows where the month column is either january or february
 3) select the rows where geoid is not in a list of excluded codes (excluded_codes=['US','IN','BR'])?
@@ -45,21 +46,33 @@
 7) extract countries and territory code = GVR, KNA, NLD, PRT --set index in day_name base
 8) filter the rows where cases>1000 and deaths>500
 9) set_index is month_name and sort in descending
-10) create a pivot table that summarizes the total number of deaths for each country, broken down by month
-11) create a pivot table that shows the average number of deaths per country for each month
-12)  create a pivot table that summarizes the total number of deaths for each country, broken down by year
-13)  create a pivot table that displays the average population data for each country across different years
-14)  create a pivot table that shows the maximum number of cases recorded for each country in each year
-15)  create a pivot table that displays the maximum number of cases recorded for each country during each month
-16)  create a pivot table that shows the total number of deaths for each geographical region, broken down by each day of the week
-17)  reshape a DataFrame to unpivot the 'cases' and 'deaths' columns into a single column, while keeping the countries and territories and reported date information intact
-18)  find the maximum number of deaths recorded for each country or territory in the DataFrame
-19)  calculate the average number of cases for each country or territory in the DataFrame
-20)  calculate the total number of deaths for each country or territory for each year in the DataFrame
-21)  find the average population data for the year 2018 for each country or territory in the DataFrame
-22)  determine the maximum number of cases and the minimum number of deaths for each country or territory in each year in the DataFrame
-23)  find the minimum, maximum, and average population data for the year 2018 for each country or territory in each year in the DataFrame
-24)  find the maximum population data for 2018 and the total number of cases for each combination of date, day, month, and year in the DataFrame
-25)  create a new column in the DataFrame that adds 5 to the value in the 'popData2018' column for each row
-26)  create a new column in the DataFrame that adds 5 to each value in the 'deaths' column
+* pivot table()
+1) create a pivot table that summarizes the total number of deaths for each country, broken down by month
+2) create a pivot table that shows the average number of deaths per country for each month
+3)  create a pivot table that summarizes the total number of deaths for each country, broken down by year
+4)  create a pivot table that displays the average population data for each country across different years
+5)  create a pivot table that shows the maximum number of cases recorded for each country in each year
+6)  create a pivot table that displays the maximum number of cases recorded for each country during each month
+7)  create a pivot table that shows the total number of deaths for each geographical region, broken down by each day of the week
+* melt()
+1)  reshape a DataFrame to unpivot the 'cases' and 'deaths' columns into a single column, while keeping the countries and territories and reported date information intact
+* groupby()
+1)  find the maximum number of deaths recorded for each country or territory in the DataFrame
+2)  calculate the average number of cases for each country or territory in the DataFrame
+3)  calculate the total number of deaths for each country or territory for each year in the DataFrame
+4)  find the average population data for the year 2018 for each country or territory in the DataFrame
+5)  determine the maximum number of cases and the minimum number of deaths for each country or territory in each year in the DataFrame
+6)  find the minimum, maximum, and average population data for the year 2018 for each country or territory in each year in the DataFrame
+7)  find the maximum population data for 2018 and the total number of cases for each combination of date, day, month, and year in the DataFrame
+* apply()
+1)  create a new column in the DataFrame that adds 5 to the value in the 'popData2018' column for each row
+2)  create a new column in the DataFrame that adds 5 to each value in the 'deaths' column
+* idxmax()
+1)   identify the row with the maximum number of deaths in your dataset
+2)   Which country or territory has the lowest minimum death count in the dataset?
+3)   Which row in the dataset corresponds to the lowest number of deaths, and what are the details of that row
+4)   Which month has the highest maximum number of cases recorded across all months in the dataset
+* cut()
+1)   categorize the number of deaths in your dataset into different levels such as 'Low,' 'Medium,' 'High,' and 'Very High'
+
    
